@@ -29,6 +29,24 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+	/* center */
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	  }
+
+/* Row Columns */
+.row {
+	display: flex;
+  }
+  
+  .column {
+	flex: 33.33%;
+	padding: 5px;
+  }
+
 body {
 	line-height: 1;
 }
@@ -54,7 +72,7 @@ table {
 body {
 	-webkit-text-size-adjust: none;
 }
-
+ 
 mark {
 	background-color: transparent;
 	color: inherit;
@@ -2674,7 +2692,55 @@ input, select, textarea {
 			-webkit-transform: scale(1.05);
 			-ms-transform: scale(1.05);
 			transform: scale(1.05);
+
 		}
+
+/* Videos */
+video {
+	display: block;
+    margin: auto;
+	padding-bottom: 100px;
+}
+
+	.video vid {
+		display: block;
+	}
+
+	.video.left, .video.right {
+		max-width: 40%;
+	}
+
+	.videoleft img, .video.right img {
+		width: 100%;
+	}
+	
+	.video.main {
+		display: block;
+		margin: 4rem 0;
+		width: 100%;
+	}
+
+		.video.main:first-child {
+			margin-top: 0;
+		}
+
+		.video.main img {
+			width: 100%;
+		}
+
+	@media screen and (max-width: 736px) {
+
+		.video.fit {
+			margin: 2rem 0;
+		}
+
+		.video.main {
+			margin: 2rem 0;
+		}
+
+	}
+
+
 
 /* Actions */
 
