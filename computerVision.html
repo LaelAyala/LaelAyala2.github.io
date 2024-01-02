@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>About Me</title>
+		<title> Computer Vision </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,10 +19,12 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">About Me </a>
+						<a href="index.html" class="logo">Computer Vision</a>
 					</header>
 
-				<!-- Nav -->
+				
+
+					<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="index.html">Engineering Projects</a></li>
@@ -42,15 +44,18 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									
-									<h1>Alicia Lael Ayala</h1>
-									<p>Hello, my first name is Alicia, but I go by my middle name Lael (Lay-el), and I am from Atlanta,GA. I am a sophomore(c/o 2026) Mechanical Engineering student at Harvard University. At school, I am an outfielder for the Varsity Softball team and an Army ROTC cadet. I have a passion for robotics and an interest in computer science and data science. In my free time, I enjoy hiking, traveling, and reading </p>
+									<span class="date"> December 4, 2023</span>
+									<h2><a href="computerVision.html"> Computer Vision with ur53 robotic arm  </a></h2>
+									<p>I used a basic form of computer vision to detect which objects in the frame are blue and green, determine their locations in the robot frame, pick up the blue block, then place it onto the green platform.</p>
 								</header>
-								<div class="image main"><img src="images/ME.JPG" alt="" /></div>
-								<p>What sets me apart from my fellow candidates is my strong time management abilities. Balancing the demands of Army ROTC, varsity softball, and engineering can be quite demanding, but I've effectively managed this complex schedule through careful planning. As a result, I not only participated in these activities but also excelled in them.I’m proud to report that I won a scholar athlete award, and my Softball team won the Ivy League Championship this year and got to compete in the national regional tournament in Arkansas. In addition to softball, I also find time to volunteer at the youth homeless shelter, work for the athletics department, study Spanish, go to church, and do color guard.
-									</p>
-								<p>Thank you for considering me for this internship.</p>
-								<p> Sincerly, <br> Cadet Lael Ayala</p>
+								<div class="video"> <video  controls autoplay muted width= " 80%" src="videos/block.MOV" alt="" ></div>
+								<p>For this project, it was pretty strightfoward. There was a camera above the robot that took an picture of the table. From there, my MATLAB code surveyed the pixels that were Red only, Blue only, and Green Only, and then calculated the center pixel for each object. It then used the known robot coordinates of the red objects to convert the blue and green objects from pixel coordinate to robot coordinates. Finally, I generated a series of waypoints from the blue platform to the green platform, so the robot could pick up the blue block and place it on the green platform. This code will work, and the robot will pick up the block, no matter where the blue and green objects are on the table   </p>
+								<p>This project was really fun because I've always wanted to work with computer vision, and this experience will be the foundation to future robotics projects!</p>
+								<ul class="links">
+									<li><a href="code/Lael_Lab5New5.m"> Click here to see my MATLAB code </a></li>
+								</ul>
+
+
 							</section>
 
 					</div>
